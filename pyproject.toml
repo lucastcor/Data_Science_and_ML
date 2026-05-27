@@ -1,0 +1,18 @@
+[project]
+name = "data-science-and-ml"
+version = "0.2.0"
+description = "End-to-end data science and machine learning portfolio: regression, classification and a full predictive pipeline."
+authors = [{ name = "Lucas Teixeira Correia" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "PL"]
+ignore = ["PLR0913", "PLR2004"]
+
+[tool.ruff.lint.per-file-ignores]
+"notebooks/**" = ["E402", "B018"]
